@@ -1,0 +1,9 @@
+firstName,lastName,email,password,repeatPassword
+"",Kargopolov,email@test.com,12345678,12345678
+A,Kargopolov,email@test.com,12345678,12345678
+Sergey,"",email@test.com,12345678,12345678
+Sergey,B,email@test.com,12345678,12345678
+Sergey,Kargopolov,emailtest.com,12345678,12345678
+Sergey,Kargopolov,@emailtest.com,12345678,12345678
+Sergey,Kargopolov,email@test.com,1234567,1234567
+Sergey,Kargopolov,email@test.com,12345678901234567,12345678901234567

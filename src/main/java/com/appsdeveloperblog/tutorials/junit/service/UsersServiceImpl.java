@@ -26,8 +26,8 @@ import java.util.UUID;
 @Service("usersService")
 public class UsersServiceImpl implements UsersService {
 
-    private UsersRepository usersRepository;
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final UsersRepository usersRepository;
+    private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
     public UsersServiceImpl(UsersRepository usersRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
@@ -57,7 +57,7 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public List<UserDto> getUsers(int page, int limit) {
-        List<UserDto> returnValue = new ArrayList<>();
+        List<UserDto> returnValue;
 
         if (page > 0) page -=1;
 
